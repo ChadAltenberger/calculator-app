@@ -18,8 +18,14 @@ function add() {
   const initialResult = currentResult;
   currentResult += enteredNum;
   createAndWriteOutput('+', initialResult, enteredNum);
-  logEntries.push(enteredNum); // Adds each entered number to an array
-  console.log(logEntries[0]); // Logs the first element of the array
+  const logEntry = {
+    operation: 'ADD',
+    prevResult: initialResult,
+    number: enteredNum,
+    result: currentResult
+  };
+  logEntries.push(logEntry); // Adds each entry object to the array
+  console.log(logEntries); // Logs the entire array of objects
 }
 
 function subtract() {
