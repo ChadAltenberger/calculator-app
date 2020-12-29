@@ -3,3 +3,4 @@
 
 ---
 
+Check out [Academind](https://academind.com/) for project ideas and learning resources.
